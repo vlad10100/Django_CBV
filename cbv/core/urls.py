@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('template_view.urls'))
+    path('template/', include('template_view.urls')),
+    path('redirect/', include('redirect_view.urls')),
 ]
