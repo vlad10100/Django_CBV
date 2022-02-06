@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # Local App
     'template_view',
     'redirect_view',
+    'detail_view',
 ]
 
 MIDDLEWARE = [

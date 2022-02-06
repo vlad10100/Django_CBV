@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('template/', include('template_view.urls')),
     path('redirect/', include('redirect_view.urls')),
+    path('detail/', include('detail_view.urls')),
 ]
