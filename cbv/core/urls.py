@@ -21,4 +21,5 @@ urlpatterns = [
     path('template/', include('template_view.urls')),
     path('redirect/', include('redirect_view.urls')),
     path('detail/', include('detail_view.urls')),
+    path('list/', include('list_view.urls')),
 ]
