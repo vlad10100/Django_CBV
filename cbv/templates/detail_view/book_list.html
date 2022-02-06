@@ -1,4 +1,8 @@
 
 {% for book in books %}
     <p>{{book}}</p>
+    <form action="{% url 'crud:delete_book' book.pk %}" method="POST">
+        {% csrf_token %}
+        <button type="submit">Delete</button>
+    </form>
 {% endfor %}  

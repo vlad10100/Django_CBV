@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'redirect_view',
     'detail_view',
     'list_view',
+    'crud'
 ]
 
 MIDDLEWARE = [

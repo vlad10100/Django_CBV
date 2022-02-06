@@ -22,4 +22,5 @@ urlpatterns = [
     path('redirect/', include('redirect_view.urls')),
     path('detail/', include('detail_view.urls')),
     path('list/', include('list_view.urls')),
+    path('crud/', include('crud.urls')),
 ]
