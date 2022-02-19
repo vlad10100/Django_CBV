@@ -39,6 +39,7 @@ body {
     height: 30px;
 }
 
+
 .logo h1 {
     padding-left: 10px;
     letter-spacing: 3px;
@@ -73,12 +74,45 @@ body {
 }
 
 .menu a:hover {
-    color: var(--secondary);
+    color: white;
     font-weight: bolder;
-    text-shadow: 0px 0px 10px var(--primary);
+    text-shadow: 0px 0px 10px white;
 }
 
 
+
+.main-content{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 100px;
+    flex-wrap: wrap;
+}
+#main-content-img{
+    width: 300px;
+}
+.main-content-text{
+    width: 400px;
+    padding-top: 50px;
+}
+.main-content-text h1{
+    font-size: 40px;
+}
+.main-content-text h4{
+    padding-bottom: 30px;
+}
+.main-content-text p{
+    text-indent: 50px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+/* media query */
 @media (max-width: 768px) {
     /* menu */
     .menu{
@@ -132,5 +166,8 @@ body {
         border-radius: 4px;
         background-color: var(--primary);
         z-index: 1;
+    }
+    
 }
-}
+
+
