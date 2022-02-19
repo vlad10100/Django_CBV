@@ -1,0 +1,136 @@
+:root {
+    --primary: rgb(255, 217, 0);
+    --secondary: rgb(0, 90, 207);
+    --dark: rgb(46, 46, 46);
+    --light: rgb(211, 211, 211);
+    --bg: rgb(138, 138, 138);
+}
+
+/* whole */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* body */
+body {
+    background-color: var(--light);
+}
+
+/* navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    height: 75px;
+}
+
+/* logo and text INSIDE the navbar */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.logo #logo {
+    height: 30px;
+}
+
+.logo h1 {
+    padding-left: 10px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    color: var(--light);
+}
+
+
+
+#check {
+    display: none;
+}
+
+
+
+/* hamburger */
+.hamburger {
+    display: none;
+}
+
+.menu{
+    display: flex;
+    padding-right: 30px;
+}
+.menu li{
+    display: inline-block;
+}
+.menu a {
+    padding: 0pc 10px;
+    text-decoration: none;
+    color: var(--light);
+}
+
+.menu a:hover {
+    color: var(--secondary);
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px var(--primary);
+}
+
+
+@media (max-width: 768px) {
+    /* menu */
+    .menu{
+        position: fixed;
+        flex-direction: column;
+        text-align: center;
+        top: 75px;
+        height: 0;
+        background-color: var(--primary);
+        width: 100%;
+        float: right;
+    }
+
+    .menu li {
+        opacity: 0;
+        display: none;
+        padding-top: 30px;
+    }
+    .menu li a{
+        color: var(--dark);
+        text-transform: uppercase;
+    }
+
+    #check:checked ~ .menu{
+        height: 40vh;
+        background-color: var(--primary);
+        color:black;
+    }
+    #check:checked ~ .menu li{
+        opacity: 1;
+        display: block;
+    }
+
+
+
+    /* hamburger */
+    .hamburger {
+        padding: 0 30px;
+        display: block;
+        z-index: 1;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 33px;
+        height: 3px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        background-color: var(--primary);
+        z-index: 1;
+}
+}
